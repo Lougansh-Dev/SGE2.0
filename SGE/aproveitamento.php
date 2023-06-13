@@ -14,6 +14,13 @@ if (isset($_POST['Lista']) && $_POST['Lista'] != ''){
         FROM tb_aluno a
         INNER JOIN tb_turma t ON a.turma = t.turma AND a.ano = t.ano
         WHERE a.situacaoMatricula = 'M' AND programacao = 'S' ORDER BY turno, turma, nome ASC";
+    }elseif ($ano == 'A' && $turma == 'D') {
+        $titulo = "Alunos Com Dificuldade";
+        //$sql = "SELECT * FROM tb_aluno WHERE situacaoMatricula = 'M' AND dificuldade = 'S' ORDER BY nome ASC";
+		$sql = "SELECT a.cgm, a.ano, a.turma, a.nome, a.nascimento, a.sexo, a.situacaoMatricula, a.programacao, a.dificuldade, a.dataMatricula, a.observacao, a.dificuldade, a.programacao, t.turno
+        FROM tb_aluno a
+        INNER JOIN tb_turma t ON a.turma = t.turma AND a.ano = t.ano
+        WHERE a.situacaoMatricula = 'M' AND dificuldade = 'S' ORDER BY turno, ano, turma, nome ASC";
     }else{
         $titulo = $ano . 'º Ano ' . $turma;
         $sql = "select * from tb_aluno where ano = '$ano' and turma = '$turma' and situacaoMatricula = 'M' order by nome asc";

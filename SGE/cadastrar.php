@@ -12,23 +12,21 @@ if (isset($_POST['btnSalvar']) && $_POST['textCGM'] != ''){
 		$situacao = $_POST['textSituacaoMatricula'];
 		$matriculado = $_POST['textAnoMatricula'].'-'.$_POST['textMesMatricula'].'-'.$_POST['textDiaMatricula'];
 		$observacao = $_POST['textObservacao'];
+
+		$sql = "INSERT INTO tb_aluno 
+			(cgm, ano, turma, nome, nascimento, sexo, situacaoMatricula, dataMatricula, observacao) 
+			VALUES 
+			('$cgm', '$ano', '$turma', '$nome', '$nascimento', '$sexo', '$situacao', '$matriculado', '$observacao')"; 
+
+		$result = mysqli_query($connection, $sql);
+
+		if ($result) {
+			echo 'Registro gravado no banco com sucesso!';
+		} else {
+			echo 'Erro ao gravar registro no banco de dados: ' . mysqli_error($connection);
+		}
+
 }
-
-$sql = "INSERT INTO tb_aluno 
-(cgm, ano, turma, nome, nascimento, sexo, situacaoMatricula, dataMatricula, observacao) 
-VALUES 
-('$cgm', '$ano', '$turma', '$nome', '$nascimento', '$sexo', '$situacao', '$matriculado', '$observacao')"; 
-
-$result = mysqli_query($connection, $sql);
-
-echo '<script>';
-echo 'if ('.($result ? 'true' : 'false').') {';
-echo '  alert("Registro gravado no banco com sucesso!");';
-echo '} else {';
-echo '  alert("Erro ao gravar registro no banco de dados.");';
-echo '}';
-echo '</script>';
-
 ?>
 <html>
 	<head>
