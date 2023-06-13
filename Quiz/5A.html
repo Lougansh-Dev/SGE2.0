@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jogo de Perguntas e Respostas</title>
+  <script>
+    var score = 0;
+
+    function updateScore() {
+      document.getElementById("score").innerHTML = "Pontuação: " + score;
+    }
+
+    function addPoints() {
+      score += 5;
+      updateScore();
+    }
+  </script>
+  <style>
+    .question {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Jogo de Perguntas e Respostas</h1>
+
+  <div class="question">
+    <h3>Qual é o nome do professor da turma do 5º ano?</h3>
+    <ul>
+      <li onclick="addPoints()">Everaldo</li>
+      <li>Marcelo</li>
+      <li>Carlos</li>
+      <li>Guilherme</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quais eram os três amigos inseparáveis?</h3>
+    <ul>
+      <li>Anthony Gabriel Valcarenghi, Antonio Miguel Machado Lucasak e Antony Agustin Jimenez Jimenez</li>
+      <li>João, Pedro e Lucas</li>
+      <li>Maria, Ana e Sofia</li>
+      <li>Laura, Julia e Rafaela</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem era apaixonado por literatura?</h3>
+    <ul>
+      <li>Beatriz Nicoli Duarte Almeida</li>
+      <li>Cauã de Oliveira Schernovski</li>
+      <li>Denise Vieira de Castro</li>
+      <li>Derick Gabriel Cardoso Ribeiro</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem era muito esportivo e adorava jogar futebol?</h3>
+    <ul>
+      <li>Anthony Gabriel Valcarenghi</li>
+      <li>Antonio Miguel Machado Lucasak</li>
+      <li>Diego Henrique Alves Maciel</li>
+      <li>Fernando dos Santos Silva</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem era talentoso em artes e adorava desenhar e pintar?</h3>
+    <ul>
+      <li>Denise Vieira de Castro</li>
+      <li>Eloa Fernanda de Lima Castro</li>
+      <li>Herick Felipe Moreira</li>
+      <li>Mileni Eloisa Martins Ferreira</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem era apaixonado por tecnologia e criava seus próprios programas?</h3>
+    <ul>
+      <li>Derick Gabriel Cardoso Ribeiro</li>
+      <li>Diego Henrique Alves Maciel</li>
+      <li>Lucas Correa da Silva</li>
+      <li>Thallysson Kaleu dos Santos</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem era membro do clube de xadrez e sempre vencia as partidas?</h3>
+    <ul>
+      <li>Antonio Miguel Machado Lucasak</li>
+      <li>Gabriel Vinicius Costa</li>
+      <li>Maria Eduarda Silva Souza</li>
+      <li>Thiago Silva de Souza</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem adorava ler histórias de mistério e suspense?</h3>
+    <ul>
+      <li>Beatriz Nicoli Duarte Almeida</li>
+      <li>Brenda Gabriela Oliveira Lima</li>
+      <li>Lucas Correa da Silva</li>
+      <li>Miguel Santos Rocha</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem tinha uma paixão por animais e sonhava em ser veterinário?</h3>
+    <ul>
+      <li>Bruna Gabriela Silva Castro</li>
+      <li>Eloa Fernanda de Lima Castro</li>
+      <li>Fernando dos Santos Silva</li>
+      <li>Gabriela Vinicius Costa</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem era sempre muito organizado e ajudava a turma a manter tudo em ordem?</h3>
+    <ul>
+      <li>Maria Eduarda Silva Souza</li>
+      <li>Maria Eduarda Santos Ribeiro</li>
+      <li>Miguel Santos Rocha</li>
+      <li>Rafaela Alves Ribeiro</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem adorava cozinhar e sonhava em se tornar um grande chef?</h3>
+    <ul>
+      <li>Amanda Lopes Sousa</li>
+      <li>Bruna Gabriela Silva Castro</li>
+      <li>Brenda Gabriela Oliveira Lima</li>
+      <li>João Pedro Silva Lima</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem era sempre muito criativo e adorava inventar histórias?</h3>
+    <ul>
+      <li>Diego Henrique Alves Maciel</li>
+      <li>Eduardo dos Santos Ribeiro</li>
+      <li>Gabriel Vinicius Costa</li>
+      <li>Guilherme da Silva Souza</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem era fã de esportes radicais e adorava praticar skate e surf?</h3>
+    <ul>
+      <li>Eduardo dos Santos Ribeiro</li>
+      <li>Guilherme da Silva Souza</li>
+      <li>Herick Felipe Moreira</li>
+      <li>Rafaela Alves Ribeiro</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem adorava dançar e sempre fazia coreografias incríveis?</h3>
+    <ul>
+      <li>Amanda Lopes Sousa</li>
+      <li>Lara Beatriz Oliveira Costa</li>
+      <li>Mileni Eloisa Martins Ferreira</li>
+      <li>Thallysson Kaleu dos Santos</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem era apaixonado por música e tocava vários instrumentos?</h3>
+    <ul>
+      <li>Derick Gabriel Cardoso Ribeiro</li>
+      <li>Guilherme da Silva Souza</li>
+      <li>Lucas Correa da Silva</li>
+      <li>Rafaela Alves Ribeiro</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem era sempre muito estudioso e adorava aprender coisas novas?</h3>
+    <ul>
+      <li>Anthony Gabriel Valcarenghi</li>
+      <li>Cauã de Oliveira Schernovski</li>
+      <li>Eloa Fernanda de Lima Castro</li>
+      <li>Maria Eduarda Santos Ribeiro</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem adorava brincar ao ar livre e sempre organizava os jogos da turma?</h3>
+    <ul>
+      <li>Herick Felipe Moreira</li>
+      <li>Lara Beatriz Oliveira Costa</li>
+      <li>Miguel Santos Rocha</li>
+      <li>Thiago Silva de Souza</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem era muito extrovertido e sempre animava a turma com suas piadas?</h3>
+    <ul>
+      <li>Antony Agustin Jimenez Jimenez</li>
+      <li>Cauã de Oliveira Schernovski</li>
+      <li>João Pedro Silva Lima</li>
+      <li>Thiago Silva de Souza</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem era sempre muito prestativo e estava sempre disposto a ajudar os colegas?</h3>
+    <ul>
+      <li>Amanda Lopes Sousa</li>
+      <li>Bruna Gabriela Silva Castro</li>
+      <li>Denise Vieira de Castro</li>
+      <li>Lucas Correa da Silva</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem era muito curioso e adorava explorar novos lugares?</h3>
+    <ul>
+      <li>Brenda Gabriela Oliveira Lima</li>
+      <li>Lara Beatriz Oliveira Costa</li>
+      <li>Mileni Eloisa Martins Ferreira</li>
+      <li>Thallysson Kaleu dos Santos</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem adorava jogar videogame e sempre estava por dentro dos últimos lançamentos?</h3>
+    <ul>
+      <li>Antony Agustin Jimenez Jimenez</li>
+      <li>Derick Gabriel Cardoso Ribeiro</li>
+      <li>Lucas Correa da Silva</li>
+      <li>Thallysson Kaleu dos Santos</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem era muito habilidoso com as mãos e adorava construir coisas?</h3>
+    <ul>
+      <li>Diego Henrique Alves Maciel</li>
+      <li>Herick Felipe Moreira</li>
+      <li>Rafaela Alves Ribeiro</li>
+      <li>Thiago Silva de Souza</li>
+    </ul>
+  </div>
+
+  <div class="question">
+    <h3>Quem adorava brincar com animais de estimação e tinha vários em casa?</h3>
+    <ul>
+      <li>Amanda Lopes Sousa</li>
+      <li>Denise Vieira de Castro</li>
+      <li>Fernando dos Santos Silva</li>
+      <li>Miguel Santos Rocha</li>
+    </ul>
+  </div>
+
+  <div id="score">Pontuação: 0</div>
+
+  <script>
+    updateScore();
+  </script>
+</body>
+</html>
+

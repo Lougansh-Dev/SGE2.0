@@ -1,0 +1,173 @@
+/* Estilos gerais */
+html, body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: monospace;
+  font: 80% Tahoma;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+a:link {
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+a:visited {
+  color: gray;
+  text-decoration: none;
+}
+
+a:active {
+  color: yellow;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6D6D6D;
+  border-bottom: 3px solid #EA0000;
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 95%;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+table.turma {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 10px;
+  padding: 0;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+table.qtdeAlunos {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 10px;
+  padding: 0;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+#editar tr:hover {
+  background-color: yellow;
+}
+
+p {
+  margin: 10px;
+  padding: 10px;
+}
+
+#ident img {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 5px;
+  width: 90px;
+  height: 150px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+#ocorrencia table {
+  border-collapse: collapse;
+  border: 1px solid rgb(0, 0, 0);
+  width: 30%;
+  margin: 10px;
+  padding: 0;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+/* Estilos do menu */
+#menu ul {
+  margin: 0;
+  padding: 5px;
+  float: center;
+  width: 100%;
+  list-style: none;
+}
+
+#menu ul li {
+  display: inline;
+  position: relative;
+}
+
+#menu ul li a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 3px solid #EDEDED;
+  padding: 0px 10px;
+  float: center;
+}
+
+#menu ul li a:hover {
+  background-color: #D6D6D6;
+  color: #6D6D6D;
+  border-bottom: 3px solid #EA0000;
+}
+
+/* Estilos dos submenus */
+#menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+#menu ul li:hover > ul {
+  display: inherit;
+}
+
+#menu ul ul li {
+  display: block;
+  width: 100%;
+}
+
+#menu ul ul li a {
+  padding: 10px;
+  background-color: #EDEDED;
+  color: #333;
+  border-bottom: none;
+}
+
+#menu ul ul li a:hover {
+  background-color: #D6D6D6;
+  color: #6D6D6D;
+}
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #EDEDED;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.dropdown li {
+  display: block;
+  width: 100%;
+}
+
+.dropdown li a {
+  padding: 10px;
+  color: #333;
+}
+
+.dropdown li a:hover {
+  background-color: #D6D6D6;
+  color: #6D6D6D;
+}
+
